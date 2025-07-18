@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal_profile_page</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f4f4;
             color: #333;
             margin: 0 auto;
-            padding: 20px;
+            /*padding: 20px;  Indents the content from the corners */
         }
         h1 {
             text-align: center;
@@ -61,25 +62,34 @@
             <h2>About Us</h2>
             <p>We are a team of passionate developers dedicated to creating amazing web experiences. Here you'll find <span style="font-size: 1.2em;">amaing content</span>about web</p>
         </div>
-    </div>
+        
+        <div class="services-section" id="services">
+            <h2>Our Services</h2>
+            <p>We specialise in:</p>
+            <ul>
+                <li><span class="highlight">Web Design</span></li>
+                <li><em>Content Creation</em></li>
+                <li><strong>Digital Marketing</strong></li>
+            </ul>
+        </div>
+        
+        <div class="contact-section" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us via email at:    <span class="email">email@example.com</span></p>
+        </div>
 
-    <div class="services-section" id="services">
-        <h2>Our Services</h2>
-        <p>We specialise in:</p>
-        <ul>
-            <li><span class="highlight">Web Design</span></li>
-            <li><em>Content Creation</em></li>
-            <li><strong>Digital Marketing</strong></li>
-        </ul>
+        <div class="location-section">
+            <h3>Our Location</h3>
+            <address style="font-style: italic; font-weight: bold; text-align: right;">
+                Visit us at:<br>
+                1234 Web Street,<br>
+                Web City, WC 12345<br>
+            </address>
+        </div>
     </div>
-
-    <div class="contact-section" id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out to us via email at: <span class="email">email@example.com</span></p>
-    </div>
-
-    <!-- Footer Section -->
-     <div class="footer">
+        
+        <!-- Footer Section -->
+        <div class="footer">
         <p>&copy; 2025 My Website. All rights reserved.</p>
      </div>
 </body>

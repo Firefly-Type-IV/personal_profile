@@ -1,0 +1,209 @@
+/* Baisic Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Styling*/
+.nav-container {
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.main-nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+h1 {
+    position: relative;
+    width: max-content;
+}
+
+h1::after {
+    content: '';
+    background: linear-gradient(to right, #ffd900, #ff8c00);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 100ms;
+}
+
+.footer-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Header Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    vertical-align: top;
+    margin-bottom: 15px; /* Move logo slightly higher */
+}
+
+.header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #333;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    color: hsl(51, 100%, 50%);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Main Content Styling */
+main {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.main-content {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.about-section, .services-section, .contact-section, .location-section, .privacy-section, .terms-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    position: relative; /* This way the absolute element will be positioned relative to its parent */
+    width: max-content;
+}
+
+h2::after {
+    content: '';
+    background: linear-gradient(to right, #ffd900, #ff8c00);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 100ms;
+}
+
+h2:hover::after {
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+article, aside p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+/* Text Formatting */
+.tone {
+    color: #333;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+.highlight {
+    background-color: #ffd700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+em {
+    color: #666;
+    font-style: italic;
+}
+
+address {
+    color: #666;
+    font-style: normal;
+}
+
+.email {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
+    background-color: #333;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}

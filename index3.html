@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">SHOP NOW</a></li>
+                    <li><a href="#">BEST SELLERS</a></li>
+                    <li><a href="#">LEARN MORE</a></li>
+                    <li><a href="#">CLEARANCE</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="contact-container">
+            <section class="contact-info">
+                <h1>Have a question?</h1>
+                <p>We're here to help! Fill out the <a href="#query-form">form</a> or reach us via email or phone.</p>
+                <p><em>Everyone gets a personalised response, so please allow 24 hours during business hours for a reply.</em></p>
+                <address>
+                    <p>Email: info@email.com</p>
+                    <p>Phone: 1234567</p>
+                    <p>Address: 123 Pottery Lane, Athens, Greece</p>
+                </address>
+            </section>
+
+            <section class="contact-form">
+                <!-- action specifies url to send the form when data is submitted-->
+                <form id="query-form" action="/action.page.php" method: "POST">
+                    <fieldset>
+                        <label for="name">*Full Name</label>
+                        <input type="text" id="name" name="name" required minlength="2">
+                        
+                        <label fro="email">*Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+                    <fieldset>
+                        <label for="subject">*Select your topic</label>
+                        <select id="subject" name="subject" required>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                            <option value="none" selected disabled hidden>Select your topic</option>
+                        </select>
+                        
+                        <label for="message">*Message</label>
+                        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+                    </fieldset>
+                        
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Subscribe to our newsletter
+                        </label>
+                    
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
